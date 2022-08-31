@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 4</title>
+    <title>Exercicio 3</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -13,12 +13,12 @@
     </style>
 </head>
 <body>
-    
     <script>
-        nome = window.prompt('Qual é seu nome ?')
-        document.write(`Seu nome tem ${nome.length} letras <br>`) 
-        document.write(`Seu nome em maisculo fica ${nome.toUpperCase()} <br> `) 
-        document.write(`Seu nome em maisculo fica ${nome.toLowerCase()} `) 
+        var nome = window.prompt('Qual seu nome??')
+        var soma = nome.length
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var sn = n1 + soma
+        document.write(`O ${nome.toUpperCase()} tem  ${nome.length} letras, somando ele com ${n1}, o valor fica ${sn}`)
     </script>
 </body>
 </html>
