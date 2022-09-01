@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font-size: 20pt;
+        }
+        input{
+            font-size: 20pt;
+            width: 200px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+        div#final{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    
+    <p style="display: inline-block;">Idade <input type="text" name="txt1" id="idade"></p>
+    <p style="display: inline-bloc;">Nome <input type="text" name="txt2" id="nome"></p>
+    <div>
+        Será que voce por entrar ?
+    </div>
+    <div id="res" onclick="resultado()">
+        <input type="button" value="Ver resultado">
+    </div>
+    <div id="final">
+    </div>
+    <script>
+        /*
+        function somar(){
+            var t1 = document.getElementById('txtn1')
+            var t2= document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var s = n1 + n2
+            res.innerHTML = `Resultado foi <strong>${s}</strong>`
+        }
+        */
+
+        function resultado(){
+            var t1 = window.document.getElementById('idade')
+            var t2 = window.document.getElementById('nome').value
+            var n1 = Number(t1.value)
+            var text = t2
+            var teste = n1 < 18 ? 'voce <strong>nao pode</strong> entrar' : 'voce <strong>pode</strong> entrar'
+            var f = window.document.getElementById('final')
+            f.innerHTML = `<strong>${t2}</strong>, ${teste}`
+        }
+
+    </script>
+</body>
+</html>

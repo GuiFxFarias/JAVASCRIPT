@@ -16,12 +16,32 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
+        /*
         p1 = document.getElementsByTagName('p')[1]
         corpo = document.body
+        var d = document.querySelector('div#msg')
+        d.style.background = 'blue'
+        d.style.color = 'white'
+        d.innerHTML = 'Agora é eu que mando'
         
-        window.document.write(p1.)
+        
+        var nome = document.querySelector('div.msg')
+
+        nome.innerHTML = 'AHHAHAHAH'
+        nome.style.background = 'aqua'
+        nome.style.color = 'red'
+        */
+
+        var n1 = parseFloat(window.prompt('Digite um numero: '))
+        var n2 = parseFloat(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        var somafinal = document.write(`${soma}, essa é a soma do ${n1} e do ${n2}`)
+
+        var novo = document.querySelector('div#msg')
+        novo.innerHTML = (`${somafinal}`)
+
     </script>
 </body>
 </html>
