@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Pais</title>
+    <style>
+        div#res{
+            margin-top: 15px;
+        }
+
+        #veri{
+           width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de país</h1>
+    Digite seu país: <input type="text" name="paiss" id="paiss">
+    <input type="button" value="Verifique" onclick="verifica()">
+    <div id="res"></div>
+    <script>
+        function verifica(){
+            var txt = window.document.getElementById('paiss').value
+            var resss = window.document.getElementById('res')
+
+            resss.innerHTML = `<p>Abaixo está se você é <strong>estrangeiro</strong> ou <strong>não</strong></p>`
+
+            if (txt != 'Brasil'){
+                resss.innerHTML += 'Voce é <strong>estrangeiro</strong>'
+            } 
+            else{
+                resss.innerHTML += `Voce <strong>é do Brasil</strong>, pode entrar`
+            }   
+            resss.innerHTML += '<p>Aproveite as maravilhas do Brasil</p>'
+        }
+    </script>
+</body>
+</html>
