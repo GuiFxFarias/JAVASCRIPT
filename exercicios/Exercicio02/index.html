@@ -12,17 +12,21 @@
         <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div id="data">
-            Ano de nascimento: <input type="number" name="ano" id="ano">
+        <div>
+            <p>
+                Ano de nascimento: <input type="number" name="ano" id="ano">
+            </p>
+            <p>
+                Sexo: <input type="radio" name="sex" id="masc"><label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="femi"><label for="femi">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificador" onclick="verificar()">
+            </p>
         </div>
-        <div id="marcacao">
-            <input type="checkbox" name="masc" id="masc"> Masculino <input type="checkbox" name="masc" id="masc"> Feminino
+        <div id="res">
+            Preencha os dados acima para ver o resultado
         </div>
-        <div id="verificar" onclick="clicar()">
-            <input type="button" value="Verificar">
-        </div>
-        <div id="txt"></div>
-        <div id="imagem"></div>
     </section>
     <footer>&copy; Guilherme Farias</footer>
     <script src="script.js"></script>
