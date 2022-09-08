@@ -9,23 +9,22 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Jogadores Barcelona</h1>
     </header>
     <section>
         <div>
+            <p>Xavi, Iniesta, Messi, Piqué, Busquets, Puyol</p>
+            Escolha um jogador <input type="text" id="nome">
             <p>
-                Ano de nascimento: <input type="number" name="ano" id="ano">
+                <input type="radio" name="participa" id="gols"><label for="gols"></label>Gols
+                <input type="radio" name="participa" id="assist"><label for="assist"></label>Assistencias
             </p>
             <p>
-                Sexo: <input type="radio" name="sex" id="masc"><label for="masc">Masculino</label>
-                <input type="radio" name="sex" id="femi"><label for="femi">Feminino</label>
-            </p>
-            <p>
-                <input type="button" value="Verificador" onclick="verificar()">
+                <input type="button" value="Verificar">
             </p>
         </div>
         <div id="res">
-            Preencha os dados acima para ver o resultado
+            Clique para checar os valores do jogador
         </div>
     </section>
     <footer>&copy; Guilherme Farias</footer>
