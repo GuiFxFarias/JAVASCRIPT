@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 02</title>
+    <title>Barça</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -13,14 +13,17 @@
     </header>
     <section>
         <div>
-            <p>Xavi, Iniesta, Messi, Piqué, Busquets, Puyol</p>
-            Escolha um jogador <input type="text" id="nome">
+            <p>Xavi, Iniesta, Messi, Piqué, Busquets, Puyol (digite o nome corretamente)</p>
+            Escolha um jogador <input type="text" name="nome" id="nome">
             <p>
-                <input type="radio" name="participa" id="gols"><label for="gols"></label>Gols
-                <input type="radio" name="participa" id="assist"><label for="assist"></label>Assistencias
+                <input type="radio" name="participa" id="gols">
+                <label for="gols"></label>Gols
+                
+                <input type="radio" name="participa" id="assist">
+                <label for="assist"></label>Assistencias
             </p>
             <p>
-                <input type="button" value="verificar" onclick="verificar()">
+                <input type="button" value="Verificar" onclick="verifica()">
             </p>
         </div>
         <div id="res">
