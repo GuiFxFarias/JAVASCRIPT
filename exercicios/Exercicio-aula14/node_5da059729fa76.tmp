@@ -3,6 +3,6 @@ b = 10
 p = 1
 
 while(p < b){
-    p += a
+    p += + a
     console.log(p)
 }
