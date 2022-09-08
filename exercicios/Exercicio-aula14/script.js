@@ -1,10 +1,11 @@
 inicio = 0
 fim = 10
 passo = 2
-cont = ''
+cont = Number('')
 
-while(fim <= fim){
+while(cont == fim){
     cont = inicio + passo
-    cont += cont
     console.log(cont)
+    cont += passo
 }
+
