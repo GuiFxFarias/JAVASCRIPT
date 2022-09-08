@@ -4,5 +4,5 @@ p = 2
 
 while(p < b){
     console.log(p)
-    p += p
+    p += a
 }
