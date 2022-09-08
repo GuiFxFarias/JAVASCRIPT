@@ -20,9 +20,19 @@ section{
 
 div{
     padding: 10px;
+    margin: 0px 20px;
 }
+
 footer{
     margin-top: 15px;
     text-align: center;
     font-style: italic;
+}
+
+img#foto{
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 250px;
 }
