@@ -1,7 +1,0 @@
-inicio = 0
-fim = 10
-passo = 2
-
-while(fim <= fim){
-    console.log(inicio + passo)
-}
