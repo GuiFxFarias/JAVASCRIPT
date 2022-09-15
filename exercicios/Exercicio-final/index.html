@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 02</title>
+    <title>Analisadore de numeros</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Analisador de numeros</h1>
     </header>
     <section>
         <div>
+            <label for="inum">Coloque um numero de 1 a 100: <input type="number" name="num" id="inum" max="100" min="0"></label> 
+            <input type="button" value="Adicionar" onclick="clicar()">
         </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                
+            </select>
+            <input type="button" value="Finalizar" onclick="finaliza()"> 
+        </div>
+        
         <div id="res">
         </div>
     </section>
